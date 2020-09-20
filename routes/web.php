@@ -17,19 +17,20 @@ Route::get('/', function () {
 });
 
 Route::get('qr-code-g', function () {
-
-  
-
     \QrCode::size(500)
-
             ->format('png')
-
             ->generate('a', public_path('images/qrcode.png'));
-
-    
-
   return view('qrCode');
-
-    
-
 });
+
+Route::get('qr_page/{qr?}',function($qr = null){
+    if($qr!=null && $qr==1){
+        return "bon qr";
+    } else{
+        return 'error';
+    }
+});
+
+Route::get('employee', 'App\Http\Controllers\EmployeeController@showEmployees');
+
+Route::get('/employee/pdf','App\Http\Controllers\EmployeeController@createPDF');

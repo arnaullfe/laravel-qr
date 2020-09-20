@@ -4,7 +4,7 @@
 
 <head>
 
-    <title>How to Generate QR Code in Laravel 6? - HDTuto.com</title>
+    <title>QR PAGE</title>
 
 </head>
 
@@ -14,17 +14,9 @@
 
 <div class="visible-print text-center">
 
-    <h1>Laravel 6 - QR Code Generator Example</h1>
+    <h1>qr page</h1>
 
      
-
-    {!! QrCode::size(250)->generate('www.google.com'); !!} 
-
-
-     
-
-    <p>example by ItSolutionStuf.com.</p>
-
 </div>
 
     

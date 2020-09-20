@@ -18,12 +18,11 @@
 
      
 
-    {!! QrCode::size(100)->generate('http://gilratataplam.com/'); !!} 
+    {!! QrCode::size(150)->generate('http://192.168.1.36:8000/qr_page'); !!} 
 
-
+    {!! QrCode::size(350)->generate('http://192.168.1.36:8000/qr_page'); !!} 
      
 
-    <p>example by ItSolutionStuf.com.</p>
 
 </div>
 
